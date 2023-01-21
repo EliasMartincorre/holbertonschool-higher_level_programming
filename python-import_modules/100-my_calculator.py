@@ -19,5 +19,5 @@ if __name__ == "__main__":
         if b == "*":
             print("{} * {} = {}".format(a, c, mul(a, c)))
             sys.exit(0)
-        print("Uknow operator. Available: +, -, * and /")
+        print("Unknow operator. Available: +, -, * and /")
         sys.exit(1)
