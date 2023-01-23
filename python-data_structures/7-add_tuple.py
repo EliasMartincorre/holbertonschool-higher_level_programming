@@ -12,6 +12,7 @@ def add_tuple(tuple_a=(), tuple_b=()):
         return tuple_a
     if len(tuple_a) == 1 and len(tuple_b) == 1:
         tupleop = tuple_a[0] + tuple_b[0], 0
+        return tupleop
     if len(tuple_a) == 0 and len(tuple_b) == 0:
         tupleop = 0, 0
         return tupleop
