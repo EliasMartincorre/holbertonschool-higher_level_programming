@@ -1,0 +1,1 @@
+0_safe print
