@@ -1,46 +1,82 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TAsk of project</title>
-</head>
+<html>
+<head></head>
 <body>
-<header>
-      <h1>Python-if_else_loops_functions </h1>
-</header>
-<section>
+<h1> Python -if/else, loops, functions</h1>
 <ol>
-<h4>0. Positive anything is better than negative nothing</h4>
-<li> 0-positive_or_negative.py: determinate if negative or positive</li>
-<h4>1. The last digit </h4>
-<li>1-last_digit.py.DEterminate if last digit is minor or not that five</li>
-<h4>2. I sometimes suffer from insomnia.</h4>
-<li>program that prints the ASCII alphabet, in lowercase, not followed by a new line.</li>
-<h4>3. When I was having that alphabet soup, I never thought that it would pay off</h4>
-<li>program that prints the ASCII alphabet, in lowercase, not followed by a new line.</li>
-<h4>4. Hexadecimal printing</h4>
-<li>program that prints all numbers from 0 to 98 in decimal and in hexadecimal</li>
-<h4>5. 00...99</h4>
-<li>program that prints numbers from 0 to 99.</li>
-<h4>6.The more brains you use, the less material you nedd</h4>
-<li>program that prints all possible different combinations of two digits</li>
-<h4>7. islower</h4>
-<li>function that checks for lowercase character.</li>
-<h4>8. To uppercase</h4>
-<li>function that prints a string in uppercase followed by a new line.</li>
-<h4>9. There are only 3 colors, 10 digits, and 7 notes</h4>
-<li>function that prints the last digit of a number.</li>
-<h4>10. a + b</h4>
-<li>function that adds two integers and returns the result.</li>
-<h4>11. a ^ b</h4>
-<li>function that computes a to the power of b and return the value.</li>
-<h4>12. Fizz Buzz</h4>
-<li>function that prints the numbers from 1 to 100 separated by a space.</li>
+<strong>0-positive_or_negative.py</strong>
+<li>This program will assign a random signed number to the variable number each time it is executed and print whether the number stored in the variable number is positive or negative. </li>
+<br>
+<strong>1- The las digit</strong>
+<li>This program will assign a random signed number to the variable number each time it is executed and print the last digit of the number stored in the variable number</li>
+<br>
+<strong>2-print_alphabet.py</strong>
+<li>This program will prints the ASCII alphabet in lowercase, not followed by a new line </li>
+<br>
+<strong>3-print_alphabt.py</strong>
+<li>Idem- 2-print_alphabet but print all the letter except q and e.</li>
+<br>
+<strong>4-print_hexa.py</strong>
+<li>This program will prints all numbers from 0 to 98 in decimal and hexadecimal</li>
+<br>
+<strong>5-print_comb2.py</strong>
+<li> This program that print numbers from 0 to 99, separated by ',' folowed by a space, numbers should be printed in ascending order, whit two digits, the las number  should be followed by a new line</li>
+<br>
+<strong>6-print_comb3.py</strong>
+<li>This program will print all possible different combinations of two digitis, the two digits must be different </li>
+<br>
+<strong>7-islower.py</strong>
+<li>This program will check for lowercase character</li>
+<br>
+<strong>8-uppercase.py</strong>
+<li>This program will prints a string in uppercase folowed a new line</li>
+<br>
+<strong>9-print_last_digit.py</strong>
+<li>This program prints the last digit of a number</li>
+<br>
+<strong>10-add.py</strong.
+<li>This program will add two intergers and return the result</li>
+<br>
+<strong>11-pow.py</strong>
+<li>This program will computes a to the power of b and return the value</li>
+<br>
+<strong>12-fizzbuzz.py</strong>
+<li>This program will prints the number 1 to 100 separated by space, For multiples of three print Fizz instead of the number and for multiples of five print Buzz, For numbers which are multiples of both three and five print FizzBuzz</li>
+<br>
+<strong> 100-print-tebahpla.py</strong>
+<li>Advanced task. This program prints the ASCII alphabet, in reverse order, alternating lowercase and uppercase (z in lowercase and Y in uppercase) , not followed by a new line.</li>
+<br>
+<strong>101-remove_char_at.py</strong>
+<li>This program creates a copy of the string, removing the character at the position n (not the Python way, the “C array index”)</li>
+<br>
 </ol>
-</section>
-<p> All mandatory task for the lenguaje python</p>
+
+
+
 </body>
+
+
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
