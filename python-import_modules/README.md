@@ -1,7 +1,7 @@
 <html>
 <head></head>
 <body> 
-<header>Python - import & modules</header>
+<header><h1>Python - import & modules</h1></header>
 <ul>
 <strong>0-add.py</strong>
    <li>This program will imports the function def add(a, b): from the file add_0.py and prints the result of the addition 1 + 2 </li>
