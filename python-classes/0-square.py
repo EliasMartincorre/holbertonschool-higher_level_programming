@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" This class is empty and don do anything"""
+"""python3 -c 'print(__import__("0-square").Square.__doc__)'
+:This class is empty and don do anything
+"""
 
 
 class Square:
