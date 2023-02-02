@@ -1,12 +1,10 @@
 #!/usr/bin/python3
-""" whats your name """
+""" Doc """
 
-
-def say_my_name(first_name, last_name=""):
-    """ different possible"""
-    if type(first_name) == str and type(last_name) == str:
-        print("My name is {} {}".format(first_name, last_name))
-    if type(first_name) != str and type(last_name) == str:
+def say_my_name(first_name="", last_name=""):
+    """ Doc """
+    if type(first_name) is not str:
         raise TypeError("first_name must be a string")
-    if type(first_name) == str and type(last_name) != str:
+    if type(last_name) is not str:
         raise TypeError("last_name must be a string")
+    print("My name is {:s} {:s}".format(first_name, last_name))
