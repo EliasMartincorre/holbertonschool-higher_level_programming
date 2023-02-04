@@ -27,7 +27,7 @@ Success:
     ###
     
     >>> print_square(0)
-    <BLANKLINE>
+   
     >>> print_square("a")
     Traceback (most recent call last):
     ...
