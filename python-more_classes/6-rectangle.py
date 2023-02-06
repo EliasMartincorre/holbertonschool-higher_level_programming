@@ -4,11 +4,11 @@
 
 class Rectangle:
     """ Represent a rectangle"""
-    def __init__(self, width=0, height=0, number_of_instances=1):
+    number_of_instances = 0
+    def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
-        type(self).number_of_instances = number_of_instances
-        type(self).number_of_instances += 1
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
