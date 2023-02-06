@@ -48,4 +48,6 @@ class Rectangle:
             string = ""
             string += "\n".join("#" * self.__width
                                 for j in range(self.__height))
+        else:
+            string = ""
         return string
