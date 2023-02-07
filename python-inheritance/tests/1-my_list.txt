@@ -14,3 +14,14 @@ SUCCESS:
     >>> my_list = MyList([4])
     >>> my_list.print_sorted()
     [4]
+    >>> my_list = MyList()
+    >>> my_list.append(5)
+    >>> my_list.print_sorted()
+    [5]
+    >>> print(my_list.print_sorted() is MyList)
+    [5]
+    False
+    >>> my_list = MyList()
+    >>> str(my_list.print_sorted())
+    []
+    'None'
