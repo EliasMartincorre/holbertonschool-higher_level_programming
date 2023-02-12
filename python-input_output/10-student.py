@@ -12,11 +12,11 @@ class Student:
 
     def to_json(self, attrs=None):
         """ self .__dict arguments == None otherwise only key in the list"""
+        dic = {}
         if attrs is not None:
-            dic = {}
             for key, value in self.__dict__.items():
                 if key in attrs:
                     dic[key] = value
-                    return dic
         else:
-            return self.__dict__
+            dic = self.__dict__
+        return dic
