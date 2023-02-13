@@ -3,7 +3,8 @@
 
 from models.base import Base
 
-""" class REctangle for especific comportamiento"""
+""" class REctangle for especific
+ comportamiento"""
 
 
 class Rectangle(Base):
