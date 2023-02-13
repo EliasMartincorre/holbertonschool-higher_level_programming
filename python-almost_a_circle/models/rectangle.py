@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-""" import module base inherit for rectangle"""
-
+""" import module base
+    inherit for rectangle"""
 from models.base import Base
 
-""" class REctangle for especific
+""" class Rectangle for especific
  comportamiento"""
 
 
