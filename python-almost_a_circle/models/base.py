@@ -1,0 +1,15 @@
+#!/usr/bin/python3
+""" This class will be the “base” of all other classes"""
+
+
+class Base:
+    """only class Base, count number of instance in id = None"""
+
+    nb_objects = 0
+
+    def __init__(self, id=None):
+        if id is None:
+            Base.nb_objects += 1
+            self.id = self.nb_objects
+        else:
+            self.id = id
