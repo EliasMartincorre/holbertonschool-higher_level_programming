@@ -87,3 +87,7 @@ class Rectangle(Base):
             raise ValueError("y must be >= 0")
         else:
             self.__y = value
+
+    def display(self):
+        for i in range(self.__height):
+            [print("#" * self.__width)]
