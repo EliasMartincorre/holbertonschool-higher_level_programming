@@ -90,9 +90,11 @@ class Rectangle(Base):
             [print("#" * self.__width)]
 
     def __str__(self):
+        """ information for developer"""
         p1 = f"[Rectangle] {self.id} {self.__x}/{self.__y}"
         p2 = f"- {self.__width} / {self.__height}"
         return p1 + p2
 
     def area(self):
+        """ return the area of the class"""
         return (self.__width * self.__height)
