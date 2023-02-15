@@ -92,7 +92,7 @@ class Rectangle(Base):
     def __str__(self):
         """ information for developer"""
         p1 = f"[Rectangle] ({self.id}) {self.__x}/{self.__y}"
-        p2 = f"- {self.__width} / {self.__height}"
+        p2 = f" - {self.__width}/{self.__height}"
         return p1 + p2
 
     def area(self):
