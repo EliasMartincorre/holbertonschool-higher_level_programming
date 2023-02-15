@@ -95,7 +95,7 @@ class Rectangle(Base):
         """ return the area of the class"""
         return (self.__width * self.__height)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """asignacion dinamica de variables"""
         if len(args) >= 1:
             self.id = args[0]
@@ -107,3 +107,17 @@ class Rectangle(Base):
             self.__x = args[3]
         if len(args) >= 5:
             self.__y = args[4]
+        for key, value in kwargs.items():
+            setattr(self, key, value)
+
+    def to_dictionary(self):
+        """
+        public method that returns a distionary representation of a rectangle
+        """
+        dictionary = {}
+        dictionary["id"] = self.id
+        dictionary["width"] = self.__width
+        dictionary["height"] = self.__height
+        dictionary["x"] = self.__x
+        dictionary["y"] = self.__y
+        return dictionary
