@@ -18,3 +18,11 @@ class Square(Rectangle):
         p1 = f"[Square] ({self.id}) {self.x}/{self.y}"
         p2 = f" - {self.size}"
         return p1 + p2
+
+    @property
+    def size(self):
+        return self.__height
+
+    @size.setter
+    def size(self, value):
+        self.__height = value
