@@ -21,4 +21,4 @@ class Base:
         a = []
         for i in list_dictionaries:
             a = json.dumps(i)
-        return a
+        return str(a)
