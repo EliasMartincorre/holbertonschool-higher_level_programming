@@ -18,6 +18,6 @@ class Base:
     def to_json_string(list_dictionaries):
         """dictionary to json"""
         a = []
-    for i in list_dictionaries:
-        a = json.dumps(i)
-    return a
+        for i in list_dictionaries:
+            a = json.dumps(i)
+        return a
