@@ -2,6 +2,7 @@
 """ This class will be the “base” of all other classes"""
 import json
 
+
 class Base:
     """only class Base, count number of instance in id = None"""
 
@@ -23,4 +24,3 @@ class Base:
             return s
         else:
             return json.dumps(list_dictionaries)
-       
