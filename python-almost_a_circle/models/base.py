@@ -45,3 +45,14 @@ class Base:
             return a
         else:
             return (json.loads(json_string))
+
+    @classmethod
+    def create(cls, **dictionary):
+        """ create devuelve una instancia con todos los metodos
+            ya establecidos"""
+        if cls.__name__ == "Rectangle":
+            dummy = cls(3, 1)
+        else:
+            dummy = cls(1)
+        dummy.update(**dictionary)
+        return dummy
