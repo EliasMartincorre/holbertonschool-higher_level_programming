@@ -30,7 +30,10 @@ class Base:
         """ list_objs is a list of instances
             who inherits of Base - example:
             list of Rectangle or list of Square instances"""
-        stringj = cls.to_json_string([i .to_dictionary() for i in list_objs])
+        if list_objs is None:
+            strj = "[]"
+        else:
+            strj = cls.to_json_string([i .to_dictionary() for i in list_objs])
         filename = cls.__name__ + ".json"
         with open(filename, "w") as filej:
-            filej.write(stringj)
+            filej.write(strj)
