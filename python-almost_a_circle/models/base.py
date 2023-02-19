@@ -37,3 +37,11 @@ class Base:
         filename = cls.__name__ + ".json"
         with open(filename, "w") as filej:
             filej.write(strj)
+
+    def from_json_string(json_string):
+        """that returns the list of the JSON str representation json_string"""
+        if json_string is None:
+            a = []
+            return a
+        else:
+            return (json.loads(json_string))
