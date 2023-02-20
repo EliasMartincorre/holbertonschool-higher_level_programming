@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ This class will be the “base” of all other classes"""
 import json
+import os
 
 
 class Base:
@@ -61,9 +62,10 @@ class Base:
     def load_from_file(cls):
         """ return list of instance from json file"""
         a = cls.__name__ + ".json"
-        with open(a) as filej:
-            b = cls.from_json_string(filej.read())
-            if b is None:
-                return []
-            else:
+        if os.path.exists(a):
+            with open(a) as filej:
+                b = cls.from_json_string(filej.read())
                 return [cls.create(**i) for i in b]
+        else:
+            b = []
+            return b
