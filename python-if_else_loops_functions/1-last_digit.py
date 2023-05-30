@@ -10,4 +10,4 @@ if number > 0 or (number % 10) == 0:
     elif (number % 10) < 6:
         print(str + f"{number % 10} and is less than 6 and not 0")
 else:
-    print(str + f"-{(10 - (number % 10))} and is less than 6 and no 0")
+    print(str + f"-{(10 - (number % 10))} and is less than 6 and not 0")
