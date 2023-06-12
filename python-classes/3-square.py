@@ -27,7 +27,7 @@ class Square:
 
     def area(self):
         """ Este es un metodo
-        de instancia que toma el valor 
+        de instancia que toma el valor
         de size devuelve el cuadrado.
             """
         return (self.__size * self.__size)
