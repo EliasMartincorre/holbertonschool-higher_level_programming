@@ -6,6 +6,7 @@ argument -- description
 Return: return_description
 """
 
+
 class Square:
     """ this is a empty class
         for started  to work about
