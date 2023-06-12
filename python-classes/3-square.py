@@ -24,6 +24,10 @@ class Square:
             raise ValueError('size must be >= 0')
         else:
             self.__size = size
-    
+
     def area(self):
+        """ Este es un metodo
+        de instancia que toma el valor 
+        de size devuelve el cuadrado.
+            """
         return (self.__size * self.__size)
