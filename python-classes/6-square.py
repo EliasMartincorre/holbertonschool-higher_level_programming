@@ -57,12 +57,12 @@ class Square:
         graphic representation of
         square with character #
         """
-        if self.size == 0:
+        if self.__size == 0:
             print()
-        for b in range(self.position[1]):
+        for b in range(self.__position[1]):
             print()
         for i in range(self.size):
-            for c in range(self.position[0]):
+            for c in range(self.__position[0]):
                 print("", end=" ")
             for a in range(self.size):
                 print("#", end="")
