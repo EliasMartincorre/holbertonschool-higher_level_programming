@@ -24,13 +24,8 @@ class Square:
         el atributo size como privado
         para que pertenezca a la clase
         """
+        self.__size = size
         self.__position = position
-        if type(size) != int:
-            raise TypeError('size must be an integer')
-        elif size < 0:
-            raise ValueError('size must be >= 0')
-        else:
-            self.__size = size
 
     @property
     def size(self):
@@ -50,21 +45,22 @@ class Square:
         de instancia que toma el valor
         de size devuelve el cuadrado.
             """
-        return (self.__size * self.__size)
+        return (self.__size ** 2)
 
     def my_print(self):
-        """print in stdout a
-        graphic representation of
-        square with character #
         """
+            print in stdout a
+            graphic representation of
+            square with character #
+            """
         if self.__size == 0:
             print()
-        for b in range(self.__position[1]):
+        for b in range(0, self.__position[1]):
             print()
         for i in range(self.size):
             for c in range(self.__position[0]):
                 print("", end=" ")
-            for a in range(self.size):
+            for a in range(self.__size):
                 print("#", end="")
             print()
 
@@ -75,5 +71,4 @@ class Square:
     @position.setter
     def position(self, value):
         if type(self.__position) != tuple:
-        #if (type(self.position[0]) != int or type(self.position[1]) != int:
             raise TypeError("position must be a tuple of 2 positive integers")
