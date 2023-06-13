@@ -38,9 +38,19 @@ class Square:
             self.__position = value
 
     def area(self):
+        """sumary_line
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
         return (self.__size ** 2)
 
     def my_print(self):
+        """sumary_line
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
         if (self.__size == 0):
             print()
             return
