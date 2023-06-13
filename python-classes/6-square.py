@@ -1,9 +1,7 @@
 #!/usr/bin/python3
-"""sumary_line
-
-Keyword arguments:
-argument -- description
-Return: return_description
+"""In this program I created a class with the name
+    Square then I`m saving the different features
+    that describe a square. 
 """
 
 
@@ -11,6 +9,14 @@ class Square:
     """ this is a empty class
         for started  to work about
         class
+
+        in the start of this class
+        evoke an constructor __init__, 
+        the class allow  likes input, two arguments.
+        Se hace uso de los decoradores @property y  @setter para 
+        reasignar un nuevo valor a una variable creada como privada.
+
+
     """
     def __init__(self, size=0, position=(0, 0)):
         """the metodo init inicializa una clase con
@@ -68,5 +74,6 @@ class Square:
 
     @position.setter
     def position(self, value):
-        if (type(self.position[0]) != int or type(self.position[1]) != int):
+        if type(self.__position) != tuple:
+        #if (type(self.position[0]) != int or type(self.position[1]) != int:
             raise TypeError("position must be a tuple of 2 positive integers")
