@@ -4,13 +4,19 @@ Keyword arguments:
 argument -- adition
 Return: adition of a and b
 """
+
+
 def add_integer(a, b=98):
     """
     Return: adition a +b
     """
-    
-    if (type(a) != int) and (type(a) != float):
+
+    if not isinstance((a), (int, float)):
         raise TypeError("a must be an integer")
-    elif (type(b) != int) and (type(b) != float):
+    elif not isinstance((b), (int, float)):
         raise TypeError("b must be an integer")
-    return (int(a) + int(b))
+    if type(b) == float:
+        b = int(b)
+    if type(a) == float:
+        a = int(a)
+    return (a + b)
