@@ -5,6 +5,10 @@ argument -- adition
 Return: adition of a and b
 """
 def add_integer(a, b=98):
+    """
+    Return: adition a +b
+    """
+    
     if (type(a) != int) and (type(a) != float):
         raise TypeError("a must be an integer")
     elif (type(b) != int) and (type(b) != float):
