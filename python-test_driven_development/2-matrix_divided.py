@@ -13,17 +13,17 @@ def matrix_divided(matrix, div):
         raise TypeError("div must be a number")
     if not isinstance((matrix), (list)):
         raise TypeError("matrix must be a matrix"
-                        " (list of lists) of integers/floats")
+                        "(list of lists) of integers/floats")
     if matrix == []:
         raise TypeError("matrix must be a matrix"
-                        " (list of lists) of integers/floats")
+                        "(list of lists) of integers/floats")
     n_m = []
     for ls in matrix:
         if len(ls) == len(matrix[0]):
             for a in range(len(ls)):
                 if not isinstance((ls[a]), (int, float)):
                     raise TypeError("matrix must be a matrix"
-                                    " (list of lists) of integers/floats")
+                                    "(list of lists) of integers/floats")
             else:
                 n_m.append([round(ls[r] / div, 2) for r in range(len(ls))])
         else:
