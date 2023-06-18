@@ -61,5 +61,5 @@ class Rectangle:
                                 for j in range(self.__height))
         return string
 
-    def __rep__(self):
-        return "Rectangle(2, 4)"
+    def __repr__(self):
+        return ("Rectangle(2, 4)")
