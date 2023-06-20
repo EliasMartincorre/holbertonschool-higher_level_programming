@@ -1,0 +1,1 @@
+Everithing is object!!!
