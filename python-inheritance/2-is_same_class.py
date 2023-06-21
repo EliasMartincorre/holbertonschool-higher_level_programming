@@ -10,8 +10,8 @@ def is_same_class(obj, a_class):
     """ return True for instance
     otherwise fale.
     """
-    if isinstance(obj, a_class):
-        if issubclass(a_class, type(obj)):
-            return True
+
+    if issubclass(type(obj), a_class) and isinstance(type(obj), a_class):
+        return True
     else:
         return False
