@@ -1,0 +1,25 @@
+
+>>> MyList = __import__('1-my_list').MyList
+
+>>> a = MyList([5, 4, 3, 2, 1])
+>>> a.print_sorted()
+[1, 2, 3, 4, 5]
+
+>>> a = MyList([])
+>>> a.print_sorted()
+[]
+>>> a = MyList(["a", 2])
+>>> a.print_sorted
+<bound method MyList.print_sorted of ['a', 2]>
+
+>>> a = MyList([1.2, 1.5])
+>>> a.print_sorted()
+[1.2, 1.5]
+
+>>> a = MyList([1, 2, 5, 3])
+>>> isinstance(a, MyList)
+True
+
+>>> a = MyList([1, 2, 5, 3])
+>>> issubclass(MyList, list)
+True
