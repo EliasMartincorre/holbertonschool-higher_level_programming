@@ -4,6 +4,8 @@ En este script se crea una clase
 llamada MyList que hereda
 de la clase list.
 """
+
+
 class MyList(list):
     """New class for
     this program
@@ -12,5 +14,4 @@ class MyList(list):
         """
         Return: return cloning list in order
         """
-        
         print(sorted(self))
