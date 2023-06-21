@@ -1,11 +1,16 @@
 #!/usr/bin/python3
-"""sumary_line
-Keyword arguments:
-argument -- description
-Return: return_description
+"""
+En este script se crea una clase
+llamada MyList que hereda
+de la clase list.
 """
 class MyList(list):
-    """sumary_line
+    """New class for
+    this program
     """
     def print_sorted(self):
+        """
+        Return: return cloning list in order
+        """
+        
         print(sorted(self))

@@ -23,3 +23,19 @@ True
 >>> a = MyList([1, 2, 5, 3])
 >>> issubclass(MyList, list)
 True
+>>> print(__import__("1-my_list").MyList.print_sorted.__doc__)
+<BLANKLINE>
+        Return: return cloning list in order
+<BLANKLINE>
+
+>>> print(__import__("1-my_list").MyList.__doc__)
+New class for
+    this program
+<BLANKLINE>
+
+>>> print(__import__("1-my_list").__doc__)
+<BLANKLINE>
+En este script se crea una clase
+llamada MyList que hereda
+de la clase list.
+<BLANKLINE>
