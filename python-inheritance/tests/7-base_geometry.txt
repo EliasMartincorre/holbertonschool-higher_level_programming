@@ -93,3 +93,53 @@ New class BaseGeometry
 ... except Exception as e:
 ...     print("[{}] {}".format(e.__class__.__name__, e))
 [Exception] area() is not implemented
+
+>>> bg = BaseGeometry()
+    >>> bg.integer_validator("width", "89")
+    Traceback (most recent call last):
+    TypeError: width must be an integer
+
+    >>> bd = BaseGeometry()
+    >>> bg.integer_validator("width", [9])
+    Traceback (most recent call last):
+    TypeError: width must be an integer
+
+    >>> bd = BaseGeometry()
+    >>> bg.integer_validator("width", (98,))
+    Traceback (most recent call last):
+    TypeError: width must be an integer
+
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("width", "height")
+    Traceback (most recent call last):
+    TypeError: width must be an integer
+
+    >>> bd = BaseGeometry()
+    >>> bd.integer_validator("width", None)
+    Traceback (most recent call last):
+    TypeError: width must be an integer
+
+    >>> bd = BaseGeometry()
+    >>> bg.integer_validator(None, None)
+    Traceback (most recent call last):
+    TypeError: None must be an integer
+
+    >>> bd = BaseGeometry()
+    >>> bd.integer_validator("age", False)
+    Traceback (most recent call last):
+    ValueError: age must be greater than 0
+
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("width", 0)
+    Traceback (most recent call last):
+    ValueError: width must be greater than 0
+
+    >>> bd = BaseGeometry()
+    >>> bg.integer_validator("width", -9)
+    Traceback (most recent call last):
+    ValueError: width must be greater than 0
+
+    >>> bd = BaseGeometry()
+    >>> bd.area()
+    Traceback (most recent call last):
+    Exception: area() is not implemented
