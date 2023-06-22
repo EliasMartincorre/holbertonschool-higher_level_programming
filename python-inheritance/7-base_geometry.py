@@ -14,7 +14,7 @@ class BaseGeometry():
         """ only int"""
         self.value = value
         self.name = name
-        if type(value) != int:
+        if type(value) is not int:
             raise TypeError(f"{name} must be an integer")
         else:
             if value <= 0:
