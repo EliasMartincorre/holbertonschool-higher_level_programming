@@ -3,17 +3,19 @@
 """
 
 
-class BaseGeometry():
-    """empty class
-    """
+#!/usr/bin/python3
+"""doc"""
+
+
+class BaseGeometry:
+    """doc"""
     def area(self):
-        """ empty function"""
+        """doc"""
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
-        """ only int"""
+        """doc"""
         if not isinstance(value, int):
             raise TypeError("{} must be an integer".format(name))
-        else:
-            if value <= 0:
-                raise ValueError("{} must be greater than 0".format(name))
+        if value <= 0:
+            raise ValueError("{} must be greater than 0".format(name))
