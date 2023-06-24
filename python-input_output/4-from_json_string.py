@@ -1,4 +1,4 @@
-#!/usr/bin/pythorn3
+#!/usr/bin/python3
 """
 argument -- object.json
 Return: object of python
