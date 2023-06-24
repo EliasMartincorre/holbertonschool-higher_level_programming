@@ -13,4 +13,5 @@ def read_file(filename=""):
     file.
     """
     with open(filename,  encoding="UTF8") as f:
-        print(f.read(), end="")
+        tostdout = f.read()
+        print(tostdout, end='')
