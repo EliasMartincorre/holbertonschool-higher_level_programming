@@ -7,11 +7,9 @@
 
 def read_file(filename=""):
     """
-    Keyword arguments:
-    argument -- filename.txt
     Return: all character in the
     file.
     """
-    with open(filename,  encoding="UTF8") as f:
+    with open(filename, 'r', encoding="UTF8") as f:
         tostdout = f.read()
         print(tostdout, end='')
