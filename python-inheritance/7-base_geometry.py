@@ -6,8 +6,6 @@
 class BaseGeometry():
     """empty class
     """
-    def __init__(self):
-        pass
 
     def area(self):
         """ empty function"""
