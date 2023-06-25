@@ -1,10 +1,27 @@
-First import:
+First import all.
 
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 >>> bg = BaseGeometry()
 >>> bg.integer_validator("my_int", 12)
+
 >>> bg.integer_validator("width", 89)
+
+
+>>> isinstance(bg, BaseGeometry)
+True
+
+>>> print(__import__("7-base_geometry").BaseGeometry.integer_validator.__doc__)
+only int
+
+>>> print(__import__("7-base_geometry").BaseGeometry.__doc__)
+empty class
+<BLANKLINE>
+
+>>> print(__import__("7-base_geometry").__doc__)
+New class BaseGeometry
+<BLANKLINE>
+
 >>> try:
 ...     bg.integer_validator("name", "John")
 ... except Exception as e:
@@ -42,21 +59,11 @@ First import:
 [TypeError] age must be an integer
 
 >>> try:
-...     bg.integer_validator("age", [3])
-... except Exception as e:
-...     print("[{}] {}".format(e.__class__.__name__, e))
-[TypeError] age must be an integer
-
->>> try:
 ...    bg.integer_validator("age", (4,))
 ... except Exception as e:
 ...     print("[{}] {}".format(e.__class__.__name__, e))
 [TypeError] age must be an integer
 
->>> try:
-...    bg.integer_validator("age", True)
-... except Exception as e:
-...    print("[{}] {}".format(e.__class__.__name__, e))
 
 >>> try:
 ...     bg.integer_validator("age", {3, 4})
@@ -75,3 +82,35 @@ First import:
 ... except Exception as e:
 ...     print("[{}] {}".format(e.__class__.__name__, e))
 [Exception] area() is not implemented
+
+>>> bg = BaseGeometry()
+    >>> bg.integer_validator("width", "89")
+    Traceback (most recent call last):
+    TypeError: width must be an integer
+
+    >>> bd = BaseGeometry()
+    >>> bg.integer_validator("width", [9])
+    Traceback (most recent call last):
+    TypeError: width must be an integer
+
+    >>> bd = BaseGeometry()
+    >>> bg.integer_validator("width", (98,))
+    Traceback (most recent call last):
+    TypeError: width must be an integer
+
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("width", "height")
+    Traceback (most recent call last):
+    TypeError: width must be an integer
+
+    >>> bd = BaseGeometry()
+    >>> bd.integer_validator("width", None)
+    Traceback (most recent call last):
+    TypeError: width must be an integer
+
+    >>> bd = BaseGeometry()
+    >>> bg.integer_validator(None, None)
+    Traceback (most recent call last):
+    TypeError: None must be an integer
+
+    
