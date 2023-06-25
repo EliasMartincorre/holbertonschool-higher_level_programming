@@ -1,18 +1,15 @@
 #!/usr/bin/python3
-"""New class BaseGeometry
-"""
+"""doc"""
 
 
-class BaseGeometry():
-    """empty class
-    """
-
+class BaseGeometry:
+    """doc"""
     def area(self):
-        """ empty function"""
+        """doc"""
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
-        "only int"
+        """doc"""
         if not isinstance(value, int):
             raise TypeError("{} must be an integer".format(name))
         if value <= 0:
