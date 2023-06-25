@@ -11,7 +11,7 @@
 True
 
 >>> print(__import__("7-base_geometry").BaseGeometry.integer_validator.__doc__)
- only int
+only int
 
 >>> print(__import__("7-base_geometry").BaseGeometry.__doc__)
 empty class
@@ -58,12 +58,6 @@ New class BaseGeometry
 [TypeError] age must be an integer
 
 >>> try:
-...     bg.integer_validator("age", [3])
-... except Exception as e:
-...     print("[{}] {}".format(e.__class__.__name__, e))
-[TypeError] age must be an integer
-
->>> try:
 ...    bg.integer_validator("age", (4,))
 ... except Exception as e:
 ...     print("[{}] {}".format(e.__class__.__name__, e))
@@ -73,7 +67,7 @@ New class BaseGeometry
 ...    bg.integer_validator("age", True)
 ... except Exception as e:
 ...    print("[{}] {}".format(e.__class__.__name__, e))
-
+[TypeError] age must be an integer
 
 >>> try:
 ...     bg.integer_validator("age", {3, 4})
@@ -126,7 +120,7 @@ New class BaseGeometry
     >>> bd = BaseGeometry()
     >>> bd.integer_validator("age", False)
     Traceback (most recent call last):
-    ValueError: age must be greater than 0
+    TypeError: age must be an integer
 
     >>> bg = BaseGeometry()
     >>> bg.integer_validator("width", 0)
