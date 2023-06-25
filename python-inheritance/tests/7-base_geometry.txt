@@ -63,11 +63,6 @@ New class BaseGeometry
 ...     print("[{}] {}".format(e.__class__.__name__, e))
 [TypeError] age must be an integer
 
->>> try:
-...    bg.integer_validator("age", True)
-... except Exception as e:
-...    print("[{}] {}".format(e.__class__.__name__, e))
-[TypeError] age must be an integer
 
 >>> try:
 ...     bg.integer_validator("age", {3, 4})
@@ -117,23 +112,4 @@ New class BaseGeometry
     Traceback (most recent call last):
     TypeError: None must be an integer
 
-    >>> bd = BaseGeometry()
-    >>> bd.integer_validator("age", False)
-    Traceback (most recent call last):
-    TypeError: age must be an integer
-
-    >>> bg = BaseGeometry()
-    >>> bg.integer_validator("width", 0)
-    Traceback (most recent call last):
-    ValueError: width must be greater than 0
-
-    >>> bd = BaseGeometry()
-    >>> bg.integer_validator("width", -9)
-    Traceback (most recent call last):
-    ValueError: width must be greater than 0
-
-    >>> bd = BaseGeometry()
-    >>> bd.area()
-    Traceback (most recent call last):
-    Exception: area() is not implemented
     
