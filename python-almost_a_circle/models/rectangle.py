@@ -113,7 +113,11 @@ class Rectangle(Base):
         argument -- description
         Return: return_description
         """
+        for a in range(self.__y):
+            print()
         for i in range(self.__height):
+            for o in range(self.__x):
+                print(" ", end="")
             for b in range(self.__width):
                 print("#", end="")
             print()
