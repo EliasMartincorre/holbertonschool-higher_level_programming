@@ -6,7 +6,7 @@ argument -- description
 Return: return_description
 """
 import unittest
-from base import Base
+from models.base import Base
 
 class Base_TestCase(unittest.TestCase):
     """
