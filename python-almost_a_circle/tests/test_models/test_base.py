@@ -15,6 +15,7 @@ class Base_TestCase(unittest.TestCase):
     Return: return_description
     """
     def test_id(self):
+        """ tests id"""
         a = Base()
         self.assertEqual(a.id, 1)
         b = Base()
