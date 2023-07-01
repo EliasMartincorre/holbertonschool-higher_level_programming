@@ -128,6 +128,8 @@ class Rectangle(Base):
         return (p + p1)
 
     def update(self, *args):
+        """update de class
+        usando args"""
         if len(args) >= 1:
             self.id = args[0]
         if len(args) >= 2:
