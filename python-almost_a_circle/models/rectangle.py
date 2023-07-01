@@ -16,18 +16,18 @@ class Rectangle(Base):
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        if not isinstance(width, int):
+        """if not isinstance(width, int):
             raise TypeError("width must be an integer")
         if width <= 0:
             raise ValueError("width must be > 0")
-        else:
-            self.__width = width
-        if not isinstance(height, int):
+        else:"""
+        self.width = width
+        """ if not isinstance(height, int):
             raise TypeError("height must be an integer")
         if height <= 0:
             raise ValueError("height must be > 0")
-        else:
-            self.__height = height
+        else:"""
+        self.height = height
         self.__x = x
         self.y = y
         super().__init__(id)
