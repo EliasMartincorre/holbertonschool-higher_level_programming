@@ -106,3 +106,14 @@ class Rectangle(Base):
     def area(self):
         """ area """
         return (self.__width * self.__height)
+
+    def display(self):
+        """sumary_line
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        for i in range(self.__height):
+            for b in range(self.__width):
+                print("#", end="")
+            print()
