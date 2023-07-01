@@ -1,2 +1,1 @@
-ca va todo :wq
-
+ca tambien:wq
