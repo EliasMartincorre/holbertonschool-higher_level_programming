@@ -35,7 +35,7 @@ class Base:
     def save_to_file(cls, list_objs):
         b = []
         if list_objs is None:
-            a = []
+            a = "[]"
         else:
             for objetos in list_objs:
                 b.append(objetos.to_dictionary())
