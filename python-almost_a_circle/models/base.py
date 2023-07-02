@@ -2,7 +2,7 @@
 """
 sera por esto
 """
-from json import dumps
+from json import dumps, loads
 
 
 class Base:
@@ -43,3 +43,16 @@ class Base:
         filename = f"{cls.__name__}.json"
         with open(filename, "w") as f:
             f.write(a)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """
+            Keyword arguments:
+            argument: json_string is a string representing
+            a list of dictionaries
+            Return: return_description
+            """
+        if json_string is None:
+            return []
+        else:
+            return loads(json_string)
