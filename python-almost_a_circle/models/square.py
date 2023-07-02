@@ -46,8 +46,9 @@ class Square(Rectangle):
             self.x = args[2]
         if len(args) == 4:
             self.y = args[3]
-        for key, value in kwargs.items():
-            setattr(self, key, value)
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
 
     def to_dictionary(self):
         """sumary_line
