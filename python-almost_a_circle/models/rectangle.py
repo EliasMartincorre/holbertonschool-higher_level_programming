@@ -142,3 +142,19 @@ class Rectangle(Base):
             self.__y = args[4]
         for key, value in kwargs.items():
             setattr(self, key, value)
+
+    def to_dictionary(self):
+        """sumary_line
+        Keyword arguments: all
+        atribute of the class.
+        argument -- self
+        Return: the dictionary representation
+                of a Rectangle.
+        """
+        dic = {}
+        dic["id"] = self.id
+        dic["width"] = self.width
+        dic["height"] = self.height
+        dic["x"] = self.x
+        dic["y"] = self.y
+        return dic
