@@ -64,9 +64,13 @@ class Base:
         argument -- description
         Return: return_description
         """
-        try:
-           dummy = cls(1, 1)
-           dummy.update(**dictionary)
-           return dummy
-        except Exception:
-            pass
+        if cls.__name__ == "Rectangle":
+            dummy = cls(1, 1)
+        else:
+            dummy = cls(1)
+        if dictionary is None:
+            return
+        else:
+            dummy.update(**dictionary)
+        return dummy
+
