@@ -56,3 +56,14 @@ class Base:
             return []
         else:
             return loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """sumary_line
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        dummy = cls(1, 1)
+        dummy.update(**dictionary)
+        return dummy
