@@ -2,7 +2,8 @@
 """
 sera por esto
 """
-from json import dumps, loads
+from json import dumps, loads, load
+import os.path
 
 
 class Base:
@@ -73,3 +74,22 @@ class Base:
         else:
             dummy.update(**dictionary)
         return dummy
+
+    @classmethod
+    def load_from_file(cls):
+        """sumary_line
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+
+        lista = []
+        filename = f"{cls.__name__}.json"
+        if os.path.exists(filename):
+            with open(filename) as f:
+                b = cls.from_json_string(f.read())
+                for elementos in b:
+                    lista.append(cls.create(**elementos))
+                return lista
+        else:
+            return []
