@@ -2,6 +2,7 @@
 """
 sera por esto
 """
+from json import dumps
 
 
 class Base:
@@ -20,3 +21,12 @@ class Base:
             self.id = self.__nb_objects
         else:
             self.id = id
+
+    @staticmethod
+    def to_json_string(list_dictionaries):
+        """ json represetation of
+        python object"""
+        lista = []
+        if list_dictionaries is None or list_dictionaries == []:
+            return "[]"
+        return dumps(list_dictionaries)
