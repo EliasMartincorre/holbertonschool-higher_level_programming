@@ -48,3 +48,16 @@ class Square(Rectangle):
             self.y = args[3]
         for key, value in kwargs.items():
             setattr(self, key, value)
+
+    def to_dictionary(self):
+        """sumary_line
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        dic = {}
+        dic["id"] = self.id
+        dic["size"] = self.width
+        dic["x"] = self.x
+        dic["y"] = self.y
+        return dic
