@@ -64,6 +64,9 @@ class Base:
         argument -- description
         Return: return_description
         """
-        dummy = cls(1, 1)
-        dummy.update(**dictionary)
-        return dummy
+        try:
+           dummy = cls(1, 1)
+           dummy.update(**dictionary)
+           return dummy
+        except Exception:
+            pass
