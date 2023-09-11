@@ -153,8 +153,8 @@ class Rectangle(Base):
         """
         dic = {}
         dic["id"] = self.id
-        dic["width"] = self.width
-        dic["height"] = self.height
-        dic["x"] = self.x
-        dic["y"] = self.y
+        dic["width"] = self.__width
+        dic["height"] = self.__height
+        dic["x"] = self.__x
+        dic["y"] = self.__y
         return dic

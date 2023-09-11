@@ -22,17 +22,10 @@ class Student:
         self.last_name = last_name
         self.age = age
 
-    def to_json(self, attrs=None):
+    def to_json(self):
 
         """Return: dictionary representation of the instances
         recupera una representacion del diccionario
 
         """
-        dic = {}
-        if attrs is not None:
-            for key, value in self.__dict__.items():
-                if key in attrs:
-                    dic[key] = value
-        else:
-            dic = self.__dict__
-        return dic
+        return (self.__dict__)
